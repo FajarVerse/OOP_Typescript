@@ -10,7 +10,7 @@ describe("Visibility", () => {
     public increment(): void {
       this.count++;
     }
-    getCount(): number {
+    public getCount(): number {
       return this.count;
     }
   }
