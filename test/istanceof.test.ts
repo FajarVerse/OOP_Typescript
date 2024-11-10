@@ -11,7 +11,7 @@ describe("Instance Of", () => {
     console.info(typeof Syayid);
   });
 
-  // Istanceof (mengeck type class)
+  // Istanceof (mengecek type class)
   it("should have problem use istanceof", () => {
     expect(Andrean instanceof Mahasiswa).toBe(true);
     expect(Andrean instanceof Dosen).toBe(false);

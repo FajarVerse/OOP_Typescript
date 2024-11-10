@@ -7,7 +7,7 @@ describe("Polymorphism", () => {
 
   class Dosen extends Manajemen {}
 
-  // Function Polymorphism & Type Cast (mengubah data dari satu kelain secara detail & mengecek keturunan juga)
+  // Function parameter Polymorphism & Type Cast (mengubah data dari satu kelain secara detail & mengecek keturunan juga)
   function sayHello(mahasiswa: Mahasiswa): void {
     if (mahasiswa instanceof Dosen) {
       const dosen = mahasiswa as Dosen;
@@ -32,6 +32,7 @@ describe("Polymorphism", () => {
     }
   }
 
+  // Polymorphism (berubah class)
   it("should support", () => {
     let mahasiswa: Mahasiswa = new Mahasiswa("Gifari");
     console.info(mahasiswa);
